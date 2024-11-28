@@ -1,9 +1,6 @@
-# oci-pg-with-unix-cron
-
 # using linux crond service as a workaround for absence of scheduler extensions in OCI postgres
 
-### ssh into a virtual machine that can connect to your pg instance
-### (Oracle allows you to create free VMs, that are suitable here)
+### ssh into a virtual machine that can connect to your pg instance (Oracle allows you to create free VMs, that are suitable here)
     ssh -p 22 username@host
 
 ### install a package providing a cron implementation, for example:
