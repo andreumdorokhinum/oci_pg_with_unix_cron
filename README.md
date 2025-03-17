@@ -4,7 +4,7 @@
     ssh -p 22 username@host
 
 ### install a package providing a cron implementation, for example:
-    sudo yum install cronie
+    sudo dnf install cronie
 
 ### enable the crond service
     sudo systemctl enable crond.service
@@ -16,12 +16,12 @@
     sudo systemctl status crond.service
 
 ### install the psql utility that will communicate with your postgres server
-    sudo yum install postgresql
+    sudo dnf install postgresql
 
 ### set a password to your pg instance in an env variable for crond to use
     sudo vim /etc/environment
-        pwd="my_very_secure_password"
-        host="10.10.10.10"
+        pwd="your_very_secure_password"
+        host="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-primary.postgresql.bb-ccccccccc-1.oc1.oraclecloud.com"
         db="db"
         uname="uname"
 
